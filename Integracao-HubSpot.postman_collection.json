@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "b8189aff-72ca-457e-b479-61a38f0ba1a7",
+		"name": "Integração - HubSpot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37412897"
+	},
+	"item": [
+		{
+			"name": "Gerar Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/loginHubSpot?code=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loginHubSpot"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gera URL Autorização",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Contato",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "CLn30N7fMhICAAEYk9bUFyDzj9glKISP8QQyFDEcybA1CG38ggUQd8JNN4P4uV1uOgQAAABBQhScHqxWu8WbQt8VPDaODs4FdE1zvkoDbmExUgBaAGAAaPOP2CVwAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Contatos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook Contato",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
