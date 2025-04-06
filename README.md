@@ -17,8 +17,8 @@ Este repositório contém uma API REST desenvolvida em **Spring Boot** para inte
 Para utilizar a API devemos seguir os passos abaixo:
 
 - Clone o repositório
+- Abra o arquivo hubSpot em sua IDE de preferência (Indicado o IntelliJ)
 - Configure as variáveis de ambiente que estão comentadas no `application.properties`
-- Abra o arquivo hubSpot em sua IDE de preferência (Indicado o Intellij)
 - Execute o comando `mvn spring-boot:run`
 
 Se ainda não contém os dados para configurar as varíaveis de ambiente, crie uma conta de desenvolvedor no HubSpot: - [HubSpot Developer Account](https://developers.hubspot.com/).
