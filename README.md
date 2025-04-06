@@ -18,7 +18,7 @@ Para utilizar a API devemos seguir os passos abaixo:
 
 - Clone o repositório
 - Configure as variáveis de ambiente que estão comentadas no `application.properties`
-- Abra o arquivo hubSpot em sua IDE de preferência (Indicado o Intellij)
+- Abra o arquivo hubSpot em sua IDE de preferência (Indicado o IntelliJ)
 - Execute o comando `mvn spring-boot:run`
 
 Se ainda não contém os dados para configurar as varíaveis de ambiente, crie uma conta de desenvolvedor no HubSpot: - [HubSpot Developer Account](https://developers.hubspot.com/).
